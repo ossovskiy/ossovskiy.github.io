@@ -1,0 +1,31 @@
+/************************************************************************************
+ LOGO, BRAND
+*************************************************************************************/
+
+.logo {
+    float: left;
+    padding-top: $gap-base;
+    padding-left-left: $gap-base;
+    color: $base-strong;
+
+    &:first-letter {
+        color: $link-color;
+    }
+
+    &:hover, &:focus, &:active {
+        color: $link-color;
+        text-decoration: none;
+    }
+
+    strong {
+        //font-family: $base-font-family;
+        @include font-size($brand-font-size);
+    }
+}
+
+.logo--inline {
+    float: none;
+    @include inline-block;
+    vertical-align: baseline;
+}
+

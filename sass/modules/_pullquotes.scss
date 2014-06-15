@@ -1,0 +1,101 @@
+/************************************************************************************
+    PullQuotes
+*************************************************************************************/
+
+/* use to  mark out some text as PullQuote but without pulling  */
+
+.pullquote-open {
+    @extend %pull-center;
+    @include max-width(0.85 * $width-text);
+    padding: $gap-large;
+    padding-bottom: 0;
+    margin-bottom: $gap-large;
+    //border-bottom: $pullquote-border-width solid $pullquote-border-color;
+    text-align: center;
+
+    ul {
+        @include inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+    @include breakpoint(small) {
+         max-width: 80%;
+     }
+
+    &:after {
+        @extend %pull-center;
+        display: block;
+        margin-top: $gap-base;
+        width: $pullquote-border-length;
+        height: $pullquote-border-width;
+        background-color: $pullquote-border-color;
+        content: "\200B";
+    }
+}
+
+
+
+.pullquote {
+    @extend %pull-center;
+    @include max-width(0.7*$width-text);
+    margin-top: $gap-large;
+    margin-bottom: $gap-large;
+    text-align: center;
+
+    @include breakpoint(small) {
+        max-width: 80%;
+    }
+
+
+    &:before, &:after {
+        @extend %pull-center;
+        display: block;
+        width: $pullquote-border-length;
+        height: $pullquote-border-width;
+        background-color: $pullquote-border-color;
+        content: "\200B"
+    }
+
+    &:before {
+        margin-bottom: $gap-base;
+    }
+
+    &:after {
+        margin-top: $gap-base;
+    }
+
+}
+
+
+
+
+/*
+.pullquote {
+    @extend %pull-center;
+    @include max-width(0.6*$width-text);
+    padding: $gap-base;
+    margin-bottom: $gap-large;
+    margin-top: $gap-large;
+    border-bottom: $pullquote-border-width solid $pullquote-border-color;
+    border-top: $pullquote-border-width solid $pullquote-border-color;
+    text-align: center;
+
+    @include breakpoint(small) {
+        max-width: 80%;
+    }
+}*/
+
+
+
+
+
+

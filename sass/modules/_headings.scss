@@ -1,0 +1,104 @@
+/************************************************************************************
+    HEADINGS
+*************************************************************************************/
+
+/**
+ *  wherever possible is applied the principle of "Single-direction margin declarations"
+ *  Source: http://csswizardry.com/2012/06/single-direction-margin-declarations/
+ *  But instead of using margin-bottom I use margin-top.
+ *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
+ *  and not upon the properties (margin-bottom) of the previous object
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    //font-weight: bold;
+    line-height: $headings-line-height;
+    margin-top: $gap-large;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    @include font-size($font-size-h1);
+    margin-top: $gap-large;
+}
+
+h2 {
+    font-family: $font-family-arial;
+    font-weight: normal;
+    @include font-size($font-size-h2);
+}
+
+h3 {
+    @include font-size($font-size-h3);
+    text-align: left;
+}
+
+h4 {
+    @include font-size($font-size-h4);
+    text-align: left;
+}
+
+h5 {
+    @include font-size($font-size-h5);
+    text-align: left;
+}
+
+h6 {
+    @include font-size($font-size-h6);
+}
+
+
+h3, h4, h5 {
+    color: $link-color;
+    font-weight: normal;
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: $gap-small;
+    padding-left: $gap-mini;
+    border-left: 5px solid $link-color;
+    @include rem-fallback(max-width, $width-text);
+}
+
+/**
+  * This class is used to make the introductory text (usually a paragraph)
+  * of a document larger.
+  */
+
+.lead {
+    @include font-size($lead-font-size);
+    text-align: center;
+    max-width: 80%;
+
+    &:before {
+        @extend %pull-center;
+        display: block;
+        margin-bottom: $gap-base;
+        width: $pullquote-border-length;
+        height: $pullquote-border-width;
+        background-color: $pullquote-border-color;
+        content: "\200B";
+    }
+
+    small {
+        @include font-size(0.9);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

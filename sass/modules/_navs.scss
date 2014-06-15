@@ -1,0 +1,161 @@
+/************************************************************************************
+ NAVIGATION
+*************************************************************************************/
+
+/**
+ * NAV.
+ * Navigation abstraction.
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ *
+   <ul class=nav>
+       <li class=active><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+
+ *
+ */
+
+.nav {
+    // @include inline-block;
+    float: right;
+    font-family: $nav-font-family;
+    list-style: none;
+    padding: 0;
+    margin-left: $gap-large;
+    @include font-size($nav-font-size);
+    text-transform: uppercase;
+    text-align: center;
+    > li {
+        // @include inline-block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        > a {
+            display: block;
+            //margin: 2px;
+            margin: 0 $gap-mini;
+            padding: $gap-small;
+            padding-top: $gap-huge;
+            padding-bottom: 0;
+            text-decoration: none;
+            @include border-radius($border-radius);
+            color: $base-text;
+
+            &:hover, &:focus, &:active {
+               color: $link-color;
+            }
+        }
+    }
+
+
+    > .active > a {
+        color: $link-color;
+    }
+
+
+    @include breakpoint(small) {
+       // @include font-size($nav-font-size-screen-small);
+    }
+}
+
+
+.nav--stacked {
+    @include inline-block;
+    > li {
+        float: none;
+        display: block;
+        > a {
+            margin: 0;
+            padding: $gap-base $gap-huge;
+        }
+    }
+    > .separate {
+        float: none;
+        @include inline-block;
+        margin: $gap-large $gap-base;
+    }
+}
+
+.nav--2column {
+    @include inline-block;
+    > li {
+        float: none;
+        @include inline-block;
+        min-width: 45%;
+        margin: 0 $gap-base;
+
+    }
+    > .separate {
+        float: none;
+        min-width: 0;
+        margin: $gap-large $gap-base;
+    }
+
+}
+
+.nav--adaptive {
+    @include breakpoint(small) {
+        display: none;
+        background: $dark;
+        margin: 0;
+        margin-top: 50px;
+        padding-top: 50px;
+
+
+        > li {
+            float: none;
+            display: block;
+            min-width: 40%;
+            margin: 0 $gap-base;
+
+            > a {
+                margin: 0;
+                padding: $gap-base $gap-large;
+                @include border-radius(0);
+                border-bottom: 1px solid rgba($link-color, .15);
+
+            }
+        }
+
+        > .separate {
+            float: none;
+            margin: $gap-base;
+            margin-bottom: 0;
+            @include inline-block;
+        }
+
+        > .current > a {
+              background: mix($dark, $link-color, 80);
+              border-color: transparent;
+          }
+
+          > .active > a {
+              background: mix($dark, $link-color, 80);
+              border-color: transparent;
+          }
+
+    }
+}
+
+.nav--adaptive.open {
+    @include breakpoint(small) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

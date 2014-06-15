@@ -1,0 +1,56 @@
+/************************************************************************************
+COLORS
+*************************************************************************************/
+
+.dark {
+    background-color: $dark;
+    color: $dark-text;
+    font-family: $font-family-sans-serif-light-300;
+
+    box-shadow: -8px 0  8px -8px $dark-text;
+    -webkit-box-shadow:  -8px 0  8px -8px $dark-text;
+    -moz-box-shadow:  -8px 0  8px -8px $dark-text;
+
+    .logo {
+        color: $dark-text;
+    }
+}
+
+
+.highlight {
+    background: $base-highlight;
+    box-shadow: 0 0 8px rgba($dark-text, 0.6);
+    -webkit-box-shadow: 0 0 8px rgba($dark-text, 0.6);
+    -moz-box-shadow: 0 0 8px rgba($dark-text, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

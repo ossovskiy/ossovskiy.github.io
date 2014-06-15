@@ -1,0 +1,23 @@
+/************************************************************************************
+Post, Articles
+*************************************************************************************/
+
+/** Preformed base classes for articles and blog posts
+  */
+.post {
+    @extend %text-normalize;
+    @extend .highlight;
+    margin-top: $gap-large;
+    padding-top: $gap-base;
+    padding-bottom: $gap-huge;
+
+    blockquote p, .pullquote p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+
+
