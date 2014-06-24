@@ -1248,8 +1248,15 @@ h1 {
   font-size: 2.5rem;
   margin-top: 1.5em;
 }
+@media only screen and (max-width: 700px) {
+  /* line 21, ../sass/modules/_headings.scss */
+  h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
 
-/* line 27, ../sass/modules/_headings.scss */
+/* line 31, ../sass/modules/_headings.scss */
 h2 {
   font-family: Arial, sans-serif;
   font-weight: normal;
@@ -1257,40 +1264,40 @@ h2 {
   font-size: 1.7rem;
 }
 
-/* line 33, ../sass/modules/_headings.scss */
+/* line 37, ../sass/modules/_headings.scss */
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
   text-align: left;
 }
 
-/* line 38, ../sass/modules/_headings.scss */
+/* line 42, ../sass/modules/_headings.scss */
 h4 {
   font-size: 20.8px;
   font-size: 1.3rem;
   text-align: left;
 }
 
-/* line 43, ../sass/modules/_headings.scss */
+/* line 47, ../sass/modules/_headings.scss */
 h5 {
   font-size: 19.2px;
   font-size: 1.2rem;
   text-align: left;
 }
 
-/* line 48, ../sass/modules/_headings.scss */
+/* line 52, ../sass/modules/_headings.scss */
 h6 {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 53, ../sass/modules/_headings.scss */
+/* line 57, ../sass/modules/_headings.scss */
 h3, h4, h5 {
   color: #eb4a2a;
   font-weight: normal;
 }
 
-/* line 58, ../sass/modules/_headings.scss */
+/* line 62, ../sass/modules/_headings.scss */
 .title {
   text-align: left;
   font-weight: bold;
@@ -1309,7 +1316,7 @@ h3, h4, h5 {
   * This class is used to make the introductory text (usually a paragraph)
   * of a document larger.
   */
-/* line 75, ../sass/modules/_headings.scss */
+/* line 79, ../sass/modules/_headings.scss */
 .lead {
   font-size: 19.84px;
   font-size: 1.24rem;
@@ -1322,7 +1329,7 @@ h3, h4, h5 {
   max-width: 806.4px;
   max-width: 50.4rem;
 }
-/* line 83, ../sass/modules/_headings.scss */
+/* line 87, ../sass/modules/_headings.scss */
 .lead .button, .lead #toTop {
   font-size: 16px;
   font-size: 1rem;

@@ -35,8 +35,6 @@
         padding: 0;
         > a {
             display: block;
-            //margin: 2px;
-            margin: 0 $gap-mini;
             padding: $gap-small;
             padding-top: $gap-huge;
             padding-bottom: 0;
@@ -58,6 +56,8 @@
 
     @include breakpoint(small) {
        // @include font-size($nav-font-size-screen-small);
+        margin-left: $gap-small;
+        margin-right: $gap-small;
     }
 }
 
