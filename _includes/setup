@@ -8,6 +8,8 @@
 {% assign SITE_URL = site.url %}
 {% endif %}
 
+{% assign SITE_URL = "" %}
+
 {% if page.title %}
 {% assign TITLE = page.title %}
 {% else %}
