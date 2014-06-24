@@ -20,11 +20,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-weight: normal;
-    @include font-size($font-size-h1);
     margin-top: $gap-large;
+    @include font-size($font-size-h1 * 0.85);
 
-    @include breakpoint(small) {
-        @include font-size($font-size-h1 * 0.8);
+    @include breakpoint(big) {
+        @include font-size($font-size-h1);
      }
 }
 
