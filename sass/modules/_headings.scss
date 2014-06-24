@@ -78,7 +78,11 @@ h3, h4, h5 {
     margin-top: $gap-huge;
     @include rem-fallback(margin-right, $gap-base-rem);
     @include rem-fallback(margin-left, $gap-base-rem);
-    @include rem-fallback(max-width, $width-text*1.3);
+    @include rem-fallback(max-width, $width-text*1.2);
+
+    .button {
+        @include font-size(1);
+    }
 }
 
 

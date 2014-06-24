@@ -636,14 +636,10 @@ p {
 .blocktext, .post {
   text-align: left;
 }
-/* line 141, ../sass/base/_mixins.scss */
+/* line 139, ../sass/base/_mixins.scss */
 .blocktext p, .post p, .blocktext .p, .post .p,
 .blocktext h1,
 .post h1, .blocktext h2, .post h2, .blocktext h3, .post h3, .blocktext h4, .post h4, .blocktext h5, .post h5, .blocktext h6, .post h6,
-.blocktext .title,
-.post .title,
-.blocktext .subtitle,
-.post .subtitle,
 .blocktext cite,
 .post cite,
 .blocktext blockquote,
@@ -659,7 +655,7 @@ p {
   padding-left: 24px;
   padding-left: 1.5rem;
 }
-/* line 149, ../sass/base/_mixins.scss */
+/* line 147, ../sass/base/_mixins.scss */
 .blocktext ul, .post ul,
 .blocktext ol,
 .post ol {
@@ -667,7 +663,7 @@ p {
   margin-bottom: 1.5em;
   text-align: left;
 }
-/* line 154, ../sass/base/_mixins.scss */
+/* line 152, ../sass/base/_mixins.scss */
 .blocktext ul li, .post ul li,
 .blocktext ol li,
 .post ol li {
@@ -677,7 +673,7 @@ p {
    * Remove vertical spacing from nested lists.
    */
 }
-/* line 161, ../sass/base/_mixins.scss */
+/* line 159, ../sass/base/_mixins.scss */
 .blocktext ul li > ul, .post ul li > ul,
 .blocktext ul li > ol,
 .post ul li > ol,
@@ -688,24 +684,24 @@ p {
   margin: 0;
 }
 @media only screen and (max-width: 700px) {
-  /* line 154, ../sass/base/_mixins.scss */
+  /* line 152, ../sass/base/_mixins.scss */
   .blocktext ul li, .post ul li,
   .blocktext ol li,
   .post ol li {
     margin-left: 1em;
   }
 }
-/* line 172, ../sass/base/_mixins.scss */
+/* line 170, ../sass/base/_mixins.scss */
 .blocktext .list-compact li, .post .list-compact li {
   margin-top: 0;
 }
 @media only screen and (max-width: 700px) {
-  /* line 172, ../sass/base/_mixins.scss */
+  /* line 170, ../sass/base/_mixins.scss */
   .blocktext .list-compact li, .post .list-compact li {
     margin-left: 0.25em;
   }
 }
-/* line 185, ../sass/base/_mixins.scss */
+/* line 183, ../sass/base/_mixins.scss */
 .blocktext .blocktext p, .post .blocktext p,
 .blocktext .blocktext h1,
 .post .blocktext h1, .blocktext .blocktext h2, .post .blocktext h2, .blocktext .blocktext h3, .post .blocktext h3, .blocktext .blocktext h4, .post .blocktext h4, .blocktext .blocktext h5, .post .blocktext h5, .blocktext .blocktext h6, .post .blocktext h6,
@@ -742,7 +738,7 @@ p {
 }
 
 /** Box Sizing model  **/
-/* line 194, ../sass/base/_mixins.scss */
+/* line 192, ../sass/base/_mixins.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   /* Для Firefox */
@@ -755,14 +751,10 @@ p {
 /**
  *   Blocks Align
  */
-/* line 229, ../sass/base/_mixins.scss */
+/* line 227, ../sass/base/_mixins.scss */
 .blocktext p, .post p, .blocktext .p, .post .p,
 .blocktext h1,
 .post h1, .blocktext h2, .post h2, .blocktext h3, .post h3, .blocktext h4, .post h4, .blocktext h5, .post h5, .blocktext h6, .post h6,
-.blocktext .title,
-.post .title,
-.blocktext .subtitle,
-.post .subtitle,
 .blocktext cite,
 .post cite,
 .blocktext blockquote,
@@ -1327,8 +1319,13 @@ h3, h4, h5 {
   margin-right: 1.5rem;
   margin-left: 24px;
   margin-left: 1.5rem;
-  max-width: 873.6px;
-  max-width: 54.6rem;
+  max-width: 806.4px;
+  max-width: 50.4rem;
+}
+/* line 83, ../sass/modules/_headings.scss */
+.lead .button, .lead #toTop {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 /************************************************************************************
@@ -2237,6 +2234,11 @@ Post, Articles
 .post blockquote p, .post .pullquote p {
   padding-left: 0;
   padding-right: 0;
+}
+/* line 18, ../sass/modules/_post.scss */
+.post .lead {
+  max-width: 806.4px;
+  max-width: 50.4rem;
 }
 
 /************************************************************************************

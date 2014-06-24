@@ -43,8 +43,9 @@ This turned out to be one of the most easily acquired skills. After about one mi
 </div>
 
 One more application of the device is natural human audible range extender. It permits the user to perceive the sounds, which humans naturally cannot hear. For example bats calls, ultrasonic industrial noises etc. 
+<br><a class="button" href="prospects.html"> Prospects and Development</a>
 {:  .lead }
 
-<p class="text-center"><a class="button" href="prospects.html"> Prospects and Development</a></p>
+
 
 

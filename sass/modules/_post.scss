@@ -14,6 +14,12 @@ Post, Articles
         padding-left: 0;
         padding-right: 0;
     }
+
+    .lead {
+        @include rem-fallback(max-width, $width-text*1.2);
+    }
+
+
 }
 
 

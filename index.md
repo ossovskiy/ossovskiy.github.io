@@ -22,7 +22,14 @@ There are a number of assistive devices claimed to use the principle of echoloca
 2. These devices are descriptive. They provide the operator with a result of their calculations, rather than let the operator make his/her own judgments and decisions and perceive the world around him/herself.
 
 
-The device, which I have built, is free from these flaws. It lets the operator perceive surrounding space (whether it is a room, a corridor, an open space etc.), the size and texture of surrounding objects (whether they are small or big, made of a hard or soft material) and the speed and direction of moving objects. It lets the operator naturally perceive the world around, virtually compensating for the lost vision by means of ultrasonic echolocation. The flip side of such flexibility and versatility is time. The device relies on neuroplasticity and the adaptive capabilities of the brain; thus it requires substantial learning, which can be compared to learning a language.
+The device, which I have built, is free from these flaws. It lets the operator naturally perceive the world around, virtually compensating for the lost vision by means of ultrasonic echolocation. The flip side of such flexibility and versatility is time.
+
+It lets the operator perceive surrounding space (whether it is a room, a corridor, an open space etc.), the size and texture of surrounding objects (whether they are small or big, made of a hard or soft material) and the speed and direction of moving objects.
+  <br><a class="button" href="demo.html">Potentialities Demo</a>
+ {: .lead}
+
+
+The device relies on neuroplasticity and the adaptive capabilities of the brain; thus it requires substantial learning, which can be compared to learning a language.
 
 Although the preliminary data is rather promising, it is not clear how much time will be needed to learn the skills of performing ultrasonic echolocation fluently. It is not clear to which degree our brain is capable of acquiring such skills. And it is not clear to which degree is it capable of rewiring itself in order to be able to create a visual representation of the world out of audial clues. How the device may influence the life style of the operator is also unclear.
 
@@ -32,5 +39,3 @@ Although the preliminary data is rather promising, it is not clear how much time
          <iframe width="640" height="480" src="http://www.youtube.com/embed/TztAUuIfJF4" frameborder="0" allowfullscreen></iframe>
      </div>
 </div>
-
-<p class="text-center"><a class="button" href="demo.html">Key Potentialities</a></p>
