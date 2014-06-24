@@ -46,7 +46,6 @@ function setActiveLinks(){
 
 $(document).ready(function () {
     setActiveLinks();
-    alert("test");
 //  Activate fancybox to show images and galleries
     $(".fancybox").fancybox();
 
