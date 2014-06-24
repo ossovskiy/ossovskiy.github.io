@@ -1,0 +1,70 @@
+
+permalink:        /:categories/:title.html
+
+paginate:         10
+
+pygments:         true
+markdown:         kramdown
+
+exclude: ['README.md', "Rakefile", 'sass/']
+
+
+
+# Website url address.
+# It must be a valid url.
+# This means always setting the protocol (http|https) or prefixing with "/"
+url:      http://ossovskiy.github.io
+
+#   - When in localhost, the site will run from root "/" regardless of url
+#   - Only the following values are falsy: ["", null, false]
+localhost:  true
+
+
+# Base folder to store images.
+# In website we can use it to indicate image src: <img src="{{ site.img }}/img-name" >
+#
+# In YAML blok  liquid variables cant be used so there we write just img-name
+#
+# ---
+# header_img: img-name
+# ---
+#
+# and it will be converted then to {{site.img}}/img-name
+img:      /assets/images
+
+# Base folder to store css files.
+css:         /assets/css
+
+# Base folder to store javascript files.
+js:  /assets/javascript
+
+# Base folder to store fancybox files.
+fancybox:  /assets/fancybox
+
+author:
+  name:     Stanislav Ossovsky
+  email:    mixdreams007@gmail.ru
+  avatar:
+
+
+title:            "Ultrasonic navigating device for the blind"
+
+description:      "Ultrasonic navigating device for the blind"
+
+#################
+# NAVIGATION
+################
+
+
+
+# relative to folder ru
+navigation:
+  - name:      Device
+    url:       /
+  - name:      Demo
+    url:       /demo.html
+  - name:      Prospects
+    url:       /prospects.html
+  - name:      Contact
+    url:       /contact.html
+

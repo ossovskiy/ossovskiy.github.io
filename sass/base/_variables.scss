@@ -46,9 +46,9 @@ $screen-small: 700px;
 // -------------------------
 
 /* Page sizes */
-$width-wide: 68;
-$width-page: 50;
-$width-text: 38; /* length of  text line that is most comfortable for reading */
+$width-wide: 66;
+$width-page: 64;
+$width-text: 42; /* length of  text line that is most comfortable for reading */
 
 /* Box sizes */
 $width-media: 36;
@@ -75,7 +75,7 @@ $gap-large: 1.5 * $gap-base;
 $gap-small: .5 * $gap-base;
 $gap-mini: .25 * $gap-base;
 
-$gap-base-rem: 1;
+$gap-base-rem: 1.5;
 
 
 // Rounded Corners
@@ -98,9 +98,16 @@ $link-hover-color: #82a836;
 
 // Dark  color
 // ----------------------
+//$dark: #000000;
+//$dark-text: lighten(#b09063, 10);
 
-$dark: #000000;
-$dark-text: lighten(#b09063, 10);
+// Page Cover
+// -------------------------
+$cover-font-size: 1.06;
+$cover-strong-font-size: 1.16;
+$cover-bg: #e2dbd2;
+$cover-text: #111;
+
 
 
 // Base color theme
@@ -108,9 +115,10 @@ $dark-text: lighten(#b09063, 10);
 $base-font-family: $font-family-sans-serif-light-400;
 
 $base-strong: #111;
-$base-text: #5F4B32;
+$base-text: darken(#5F4B32, 20);
 $base-bg:  #fffff0;
-$base-highlight: #ffffff;
+//$base-bg: $cover-bg;
+$base-highlight: #f0f0f0;
 $base-border-color: mix($base-text, $base-bg, 10);
 
 
@@ -145,14 +153,10 @@ $font-size-h6: 1;
 
 
 
-// Page Cover
-// -------------------------
-$cover-font-size: 1.06;
-
 
 // Lead text
 // -------------------------
-$lead-font-size: 1.2;
+$lead-font-size: 1.24;
 
 
 

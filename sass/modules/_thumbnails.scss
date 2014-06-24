@@ -37,14 +37,11 @@
  **/
 
 .thumbnail {
-
-    //   @extend %inline-block;
-    //@extend %border-color;
     display: block;
-    border: 1px solid rgba($link-color, .4);
+    background: $cover-bg;
     border-radius: $border-radius;
-    padding: $gap-mini;
-    margin-top: $gap-large;
+    padding: $gap-small;
+    margin-top: $gap-huge;
     img {
         margin-top: 0;
         border: none;
@@ -59,9 +56,9 @@
 
 a.thumbnail {
     cursor: pointer;
-
+    border: 2px solid transparent;
     &:hover, &:focus, &:active {
-
+        border-color: $link-color;
     }
 }
 

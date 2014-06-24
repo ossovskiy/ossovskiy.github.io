@@ -1,0 +1,24 @@
+{% if site.localhost  %}
+{% assign SITE_URL = "" %}
+{% else %}
+{% assign SITE_URL = site.url %}
+{% endif %}
+<!-- for github pages where jekyll works in Safe Mode-->
+{% if site.safe  %}
+{% assign SITE_URL = site.url %}
+{% endif %}
+
+{% if page.title %}
+{% assign TITLE = page.title %}
+{% else %}
+{% assign TITLE = site.title %}
+{% endif %}
+
+{% if page.description %}
+{% assign DESCRIPTION  = page.description %}
+{% else %}
+{% assign DESCRIPTION = site.description %}
+{% endif %}
+
+
+

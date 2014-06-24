@@ -12,9 +12,11 @@ iframe, object, embed {
 // padding-botton = (iframe-height/iframe-width)*100%
 // --------------------------------------------------------
 
+
 .iframeContainer {
     position: relative;
-    padding-bottom: 56.25%;
+    //padding-bottom: 56.25%;
+    padding-bottom: 62%;
     height: 0;
     overflow: hidden;
 
@@ -32,11 +34,17 @@ iframe, object, embed {
 }
 
 
+
 // for google maps
 // ------------------
 
 .iframeContainer--gmap {
     padding-bottom: 100%;
+}
+
+.iframeWrapper {
+    @extend %pull-center;
+    @include rem-fallback(max-width, 0.7*$width-text);
 }
 
 

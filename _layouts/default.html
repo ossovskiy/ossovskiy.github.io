@@ -1,0 +1,47 @@
+{% include setup %}
+{% include head.html %}
+{% include header.html %}
+
+
+
+<div class="central-page">
+    <div class="page-content">
+        <div class="row">
+            {% if page.cover-text %}
+            <div class="cover">
+                {% if page.title %}
+                <div class="central-text">
+                    <h1 class="title">{{ page.title }}</h1>
+                </div>
+                {% endif %}
+                <div class="blocktext">
+                    {% if page.cover-image %}
+                    <p><img src="{{ site.img }}/{{ page.cover-image }}" alt=""></p>
+                    {% endif %}
+                    {{ page.cover-text }}
+                </div>
+            </div>
+            {% else %}
+            {% if page.title %}
+            <div class="central-text">
+                <h1 class="title">{{ page.title }}</h1>
+            </div>
+            {% endif %}
+            {% if page.cover-image %}
+            <p><img src="{{ site.img }}/{{ page.cover-image }}" alt=""></p>
+            {% endif %}
+            {% endif %}
+        </div>
+        <div class="row">
+            <div class="post ">
+                {{ content }}
+                {% for img in page.images %}
+                <img src="{{ site.img }}/{{ img }}" alt="">
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End Page-content -->
+    </div>
+</div>
+{% include footer.html %}
+{% include foot.html %}

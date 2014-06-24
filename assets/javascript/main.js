@@ -20,47 +20,38 @@ $(document).ready(function () {
 
 
 //  Show #toTop button only after scrolling page dawn a little ( 150 px )
-$(function () {
+function showToTopButton() {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
+        if ( ($(this).scrollTop() > 150) ) {
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();
         }
     });
-});
-
-
-//  Activate fancybox to show images and galleries
-$(document).ready(function () {
-    $(".fancybox").fancybox();
-});
+}
 
 
 
-// Highlight All Links To Current Page
+// Highlight All Links To Current Page (from CSS - tricks)
 //This function will add the class "active" to any links (even relative) that point to the current page
 
-// variant 1
-$(function () {
-    $('a').each(function () {
-        if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('active');
-        }
-    });
-});
-
-// variant 2 (from CSS - tricks)
-$(function(){
+function setActiveLinks(){
        $("a").each(function(){
                if ($(this).attr("href") == window.location.pathname){
                        $(this).addClass("active");
                }
        });
+};
+
+
+$(document).ready(function () {
+    setActiveLinks();
+    
+//  Activate fancybox to show images and galleries
+    $(".fancybox").fancybox();
+
 });
 
-
-init();
 
 
 

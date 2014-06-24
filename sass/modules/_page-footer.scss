@@ -3,9 +3,10 @@
 *************************************************************************************/
 
 .page-footer {
-    @extend .dark;
+    background-color: $cover-bg;
+    color: $cover-text;
     @extend .paddings;
-    padding-bottom: $gap-large*3;
+    padding-bottom: $gap-large;
 }
 
 

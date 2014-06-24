@@ -5,7 +5,9 @@ Section
 
 .section {
     padding-bottom: 2*$gap-large;
-    padding-top: $gap-large;
+    margin-top: $gap-large;
+    @extend .highlight;
+    background: $base-bg;
 }
 
 .section-isle {

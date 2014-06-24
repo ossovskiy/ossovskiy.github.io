@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     //font-weight: bold;
     line-height: $headings-line-height;
     margin-top: $gap-large;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -58,10 +58,13 @@ h3, h4, h5 {
 .title {
     text-align: left;
     font-weight: bold;
-    margin-bottom: $gap-small;
+    margin-top: $gap-large;
+    //margin-bottom: $gap-small;
     padding-left: $gap-mini;
     border-left: 5px solid $link-color;
     @include rem-fallback(max-width, $width-text);
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
 }
 
 /**
@@ -72,21 +75,10 @@ h3, h4, h5 {
 .lead {
     @include font-size($lead-font-size);
     text-align: center;
-    max-width: 80%;
-
-    &:before {
-        @extend %pull-center;
-        display: block;
-        margin-bottom: $gap-base;
-        width: $pullquote-border-length;
-        height: $pullquote-border-width;
-        background-color: $pullquote-border-color;
-        content: "\200B";
-    }
-
-    small {
-        @include font-size(0.9);
-    }
+    margin-top: $gap-huge;
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
+    @include rem-fallback(max-width, $width-text*1.3);
 }
 
 

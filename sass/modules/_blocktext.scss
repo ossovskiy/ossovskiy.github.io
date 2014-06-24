@@ -9,23 +9,14 @@ BLOCKTEXT
 
 .blocktext {
     @extend %text-normalize;
-    padding: $gap-small $gap-base;
+    padding-top: $gap-small;
+    padding-bottom: $gap-huge;
     text-align: left;
 
     p {
-        margin-top: $gap-small;
         margin-bottom: 0;
     }
 
-    cite {
-        @extend %caption-color;
-        text-align: left;
-        //@include font-size($cover-cite-font-size);
-
-        &:before {
-            content: "";
-        }
-    }
 
     .blocktext__title {
         @include font-size($blocktext-title-size);

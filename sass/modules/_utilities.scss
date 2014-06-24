@@ -9,15 +9,6 @@
     padding-right: $gap-base;
 }
 
-.margins {
-    margin-right: $gap-small;
-    margin-left: $gap-small;
-
-    @include breakpoint(big) {
-        margin-right: $gap-base;
-        margin-left: $gap-base;
-    }
-}
 
 
 // Blocks placement variations

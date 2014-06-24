@@ -3,6 +3,11 @@
 *************************************************************************************/
 
 .page-content {
-    @extend .margins;
+    @extend .highlight;
     margin-top: $gap-large;
+
+    @include breakpoint(big) {
+        margin-right: $gap-large;
+        margin-left: $gap-large;
+    }
 }

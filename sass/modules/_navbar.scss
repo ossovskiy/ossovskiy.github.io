@@ -7,8 +7,8 @@
  */
 
 .navbar {
-   @extend .highlight;
+   //@extend .highlight;
    @extend %clearfix;
-   @extend .paddings;
+   text-align: left;
 }
 

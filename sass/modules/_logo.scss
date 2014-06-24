@@ -3,9 +3,11 @@
 *************************************************************************************/
 
 .logo {
-    float: left;
+    @include inline-block;
+    vertical-align: baseline;
     padding-top: $gap-base;
-    padding-left-left: $gap-base;
+    @include rem-fallback(margin-right, $gap-base-rem);
+    @include rem-fallback(margin-left, $gap-base-rem);
     color: $base-strong;
 
     &:first-letter {
@@ -18,14 +20,9 @@
     }
 
     strong {
-        //font-family: $base-font-family;
         @include font-size($brand-font-size);
     }
 }
 
-.logo--inline {
-    float: none;
-    @include inline-block;
-    vertical-align: baseline;
-}
+
 

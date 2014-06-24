@@ -21,12 +21,7 @@
 .zebra {
     .zebra__item:nth-child(even),
     > li:nth-child(even) {
-        @extend .highlight;
-        @extend %border-color;
-        border-style: solid;
-        border-width: 2px;
-        border-left: none;
-        border-right: none;
+        background: $cover-bg;
     }
 }
 

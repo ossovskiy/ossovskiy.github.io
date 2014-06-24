@@ -29,7 +29,7 @@ MEDIA
     > .media__body {
         @include inline-block;
         width: 65%;
-        padding-top: $gap-base;
+        padding-top: $gap-small;
         vertical-align: bottom;
     }
 

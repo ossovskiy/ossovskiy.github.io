@@ -15,18 +15,18 @@ Containers:  ROW, COLUMN and FLUID
  */
 .central-wide {
     @extend %pull-center;
-    @include max-width($width-wide);
+    @include rem-fallback(max-width, $width-wide);
 }
 
 .central-page {
     @extend %pull-center;
-    @include max-width($width-page);
-    //@include rem-fallback(max-width, $width-page);
+    @include rem-fallback(max-width, $width-page);
 }
+
 
 .central-text {
     @extend %pull-center;
-    @include max-width($width-text);
+    @include rem-fallback(max-width, $width-text);
 }
 
 /*

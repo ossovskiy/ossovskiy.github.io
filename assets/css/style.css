@@ -652,12 +652,12 @@ p {
 .post ul,
 .blocktext ol,
 .post ol {
-  max-width: 608px;
-  max-width: 38rem;
-  padding-right: 16px;
-  padding-right: 1rem;
-  padding-left: 16px;
-  padding-left: 1rem;
+  max-width: 672px;
+  max-width: 42rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
+  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 /* line 149, ../sass/base/_mixins.scss */
 .blocktext ul, .post ul,
@@ -770,7 +770,7 @@ p {
 .blocktext ul,
 .post ul,
 .blocktext ol,
-.post ol, .lead:before, img, figcaption, .figcaption, .figure p, .pullquote-open, .pullquote-open:after, .pullquote, .pullquote:before, .pullquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third {
+.post ol, img, figcaption, .figcaption, .figure p, .iframeWrapper, .pullquote-open, .pullquote-open:after, .pullquote, .pullquote:before, .pullquote:after, .central-wide, .central-page, .central-text, .column-half, .column-third, .cover strong:before {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -870,25 +870,12 @@ p {
  UTILITIES. Helper classes
 *************************************************************************************/
 /* line 7, ../sass/modules/_utilities.scss */
-.paddings, .navbar, .page-footer {
+.paddings, .page-footer {
   padding-left: 1em;
   padding-right: 1em;
 }
 
-/* line 12, ../sass/modules/_utilities.scss */
-.margins, .page-cover, .page-content {
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-}
-@media only screen and (min-width: 1000px) {
-  /* line 12, ../sass/modules/_utilities.scss */
-  .margins, .page-cover, .page-content {
-    margin-right: 1em;
-    margin-left: 1em;
-  }
-}
-
-/* line 26, ../sass/modules/_utilities.scss */
+/* line 17, ../sass/modules/_utilities.scss */
 .pull-right, .pull-right-adapt {
   float: right;
   margin-right: 0;
@@ -896,7 +883,7 @@ p {
   margin-bottom: 0.5em;
 }
 
-/* line 30, ../sass/modules/_utilities.scss */
+/* line 21, ../sass/modules/_utilities.scss */
 .pull-left, .pull-left-adapt {
   float: left;
   margin-left: 0;
@@ -905,49 +892,49 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 34, ../sass/modules/_utilities.scss */
+  /* line 25, ../sass/modules/_utilities.scss */
   .pull-left-adapt, .pull-right-adapt {
     float: none;
   }
 }
 
-/* line 42, ../sass/modules/_utilities.scss */
+/* line 33, ../sass/modules/_utilities.scss */
 .float-left {
   float: left;
 }
 
-/* line 46, ../sass/modules/_utilities.scss */
+/* line 37, ../sass/modules/_utilities.scss */
 .float-right {
   float: right;
 }
 
-/* line 54, ../sass/modules/_utilities.scss */
+/* line 45, ../sass/modules/_utilities.scss */
 .icon {
   max-width: 15%;
 }
 
-/* line 59, ../sass/modules/_utilities.scss */
+/* line 50, ../sass/modules/_utilities.scss */
 .small {
   max-width: 35%;
 }
 
-/* line 63, ../sass/modules/_utilities.scss */
+/* line 54, ../sass/modules/_utilities.scss */
 .half {
   max-width: 50%;
 }
 @media only screen and (max-width: 700px) {
-  /* line 63, ../sass/modules/_utilities.scss */
+  /* line 54, ../sass/modules/_utilities.scss */
   .half {
     max-width: 100%;
   }
 }
 
-/* line 70, ../sass/modules/_utilities.scss */
+/* line 61, ../sass/modules/_utilities.scss */
 .big {
   max-width: 65%;
 }
 
-/* line 74, ../sass/modules/_utilities.scss */
+/* line 65, ../sass/modules/_utilities.scss */
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -960,27 +947,27 @@ p {
 /*
  * Text Align
  */
-/* line 84, ../sass/modules/_utilities.scss */
+/* line 75, ../sass/modules/_utilities.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 89, ../sass/modules/_utilities.scss */
+/* line 80, ../sass/modules/_utilities.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 93, ../sass/modules/_utilities.scss */
+/* line 84, ../sass/modules/_utilities.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 97, ../sass/modules/_utilities.scss */
+/* line 88, ../sass/modules/_utilities.scss */
 .text-justify {
   text-align: justify;
   text-align-last: justify;
 }
-/* line 100, ../sass/modules/_utilities.scss */
+/* line 91, ../sass/modules/_utilities.scss */
 .text-justify:after {
   content: "";
   display: inline-block;
@@ -992,12 +979,12 @@ p {
 /*
  * Text Decoration
  */
-/* line 108, ../sass/modules/_utilities.scss */
+/* line 99, ../sass/modules/_utilities.scss */
 .text-crossed {
   text-decoration: line-through;
 }
 
-/* line 112, ../sass/modules/_utilities.scss */
+/* line 103, ../sass/modules/_utilities.scss */
 .text-nowrap {
   white-space: nowrap;
 }
@@ -1005,19 +992,19 @@ p {
 /*
  * Adaptation
  */
-/* line 121, ../sass/modules/_utilities.scss */
+/* line 112, ../sass/modules/_utilities.scss */
 .mobile-only {
   display: none;
 }
 @media only screen and (max-width: 700px) {
-  /* line 121, ../sass/modules/_utilities.scss */
+  /* line 112, ../sass/modules/_utilities.scss */
   .mobile-only {
     display: block;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 128, ../sass/modules/_utilities.scss */
+  /* line 119, ../sass/modules/_utilities.scss */
   .mobile-hide {
     display: none;
     top: -9999px !important;
@@ -1026,7 +1013,7 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 137, ../sass/modules/_utilities.scss */
+  /* line 128, ../sass/modules/_utilities.scss */
   .mobile-full {
     padding-right: 0;
     padding-left: 0;
@@ -1034,7 +1021,7 @@ p {
   }
 }
 
-/* line 146, ../sass/modules/_utilities.scss */
+/* line 137, ../sass/modules/_utilities.scss */
 .invisible {
   position: absolute !important;
   height: 1px;
@@ -1051,7 +1038,7 @@ p {
 /*
  * Image replacement
  */
-/* line 168, ../sass/modules/_utilities.scss */
+/* line 159, ../sass/modules/_utilities.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1060,7 +1047,7 @@ p {
   *text-indent: -9999px;
 }
 
-/* line 176, ../sass/modules/_utilities.scss */
+/* line 167, ../sass/modules/_utilities.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1071,7 +1058,7 @@ p {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 187, ../sass/modules/_utilities.scss */
+/* line 178, ../sass/modules/_utilities.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1080,7 +1067,7 @@ p {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 196, ../sass/modules/_utilities.scss */
+/* line 187, ../sass/modules/_utilities.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1096,7 +1083,7 @@ p {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 213, ../sass/modules/_utilities.scss */
+/* line 204, ../sass/modules/_utilities.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1110,12 +1097,12 @@ p {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 226, ../sass/modules/_utilities.scss */
+/* line 217, ../sass/modules/_utilities.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 230, ../sass/modules/_utilities.scss */
+/* line 221, ../sass/modules/_utilities.scss */
 .disabled {
   pointer-events: none;
   opacity: 0.5;
@@ -1124,27 +1111,12 @@ p {
 /************************************************************************************
 COLORS
 *************************************************************************************/
-/* line 5, ../sass/modules/_colors.scss */
-.dark, .page-cover, .page-footer {
-  background-color: black;
-  color: #c1a885;
-  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-  box-shadow: -8px 0 8px -8px #c1a885;
-  -webkit-box-shadow: -8px 0 8px -8px #c1a885;
-  -moz-box-shadow: -8px 0 8px -8px #c1a885;
-}
-/* line 14, ../sass/modules/_colors.scss */
-.dark .logo, .page-cover .logo, .page-footer .logo {
-  color: #c1a885;
-}
-
-/* line 20, ../sass/modules/_colors.scss */
-.highlight, .navbar, .post, .zebra .zebra__item:nth-child(even),
-.zebra > li:nth-child(even) {
-  background: white;
-  box-shadow: 0 0 8px rgba(193, 168, 133, 0.6);
-  -webkit-box-shadow: 0 0 8px rgba(193, 168, 133, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(193, 168, 133, 0.6);
+/* line 7, ../sass/modules/_colors.scss */
+.highlight, .section, .page-content {
+  background: #f0f0f0;
+  box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
 }
 
 /************************************************************************************
@@ -1180,30 +1152,31 @@ body {
   font-variant: normal;
   line-height: 1.667;
   background: ivory;
-  color: #5f4b32;
+  color: #1c160f;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
 /**
 *  Give Clickable Elements a Pointer Cursor
 *  Source: http://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor/
 **/
-/* line 46, ../sass/modules/_!main.scss */
+/* line 47, ../sass/modules/_!main.scss */
 a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
   cursor: pointer;
 }
 
-/* line 50, ../sass/modules/_!main.scss */
+/* line 51, ../sass/modules/_!main.scss */
 a {
   color: #eb4a2a;
   text-decoration: none;
 }
-/* line 54, ../sass/modules/_!main.scss */
+/* line 55, ../sass/modules/_!main.scss */
 a:hover, a:focus, a:active {
   color: #82a836;
   text-decoration: underline;
 }
 
-/* line 60, ../sass/modules/_!main.scss */
+/* line 61, ../sass/modules/_!main.scss */
 ::-moz-selection, ::selection {
   background: #eb4a2a;
   color: white;
@@ -1216,18 +1189,18 @@ a:hover, a:focus, a:active {
  *  It is more logical that the position of the object depends upon it´s own properties(margin-top)
  *  and not upon the properties (margin-bottom) of the previous object
  */
-/* line 73, ../sass/modules/_!main.scss */
+/* line 74, ../sass/modules/_!main.scss */
 p {
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
 
-/* line 78, ../sass/modules/_!main.scss */
+/* line 79, ../sass/modules/_!main.scss */
 i, em, q {
   font-style: italic;
 }
 
-/* line 83, ../sass/modules/_!main.scss */
+/* line 84, ../sass/modules/_!main.scss */
 hr {
   width: 5em;
   text-align: center;
@@ -1238,7 +1211,7 @@ hr {
   color: #eb4a2a;
 }
 
-/* line 99, ../sass/modules/_!main.scss */
+/* line 100, ../sass/modules/_!main.scss */
 cite {
   font-size: 13.6px;
   font-size: 0.85rem;
@@ -1247,12 +1220,12 @@ cite {
   text-align: center;
   font-style: italic;
 }
-/* line 107, ../sass/modules/_!main.scss */
+/* line 108, ../sass/modules/_!main.scss */
 cite:before {
   content: "\2014 \2009";
 }
 
-/* line 112, ../sass/modules/_!main.scss */
+/* line 113, ../sass/modules/_!main.scss */
 .cite--big {
   font-size: 16px;
   font-size: 1rem;
@@ -1273,7 +1246,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   line-height: 1.2;
   margin-top: 1.5em;
-  text-align: center;
+  text-align: left;
 }
 
 /* line 21, ../sass/modules/_headings.scss */
@@ -1329,37 +1302,33 @@ h3, h4, h5 {
 .title {
   text-align: left;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-top: 1.5em;
   padding-left: 0.25em;
   border-left: 5px solid #eb4a2a;
-  max-width: 608px;
-  max-width: 38rem;
+  max-width: 672px;
+  max-width: 42rem;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 /**
   * This class is used to make the introductory text (usually a paragraph)
   * of a document larger.
   */
-/* line 72, ../sass/modules/_headings.scss */
+/* line 75, ../sass/modules/_headings.scss */
 .lead {
-  font-size: 19.2px;
-  font-size: 1.2rem;
+  font-size: 19.84px;
+  font-size: 1.24rem;
   text-align: center;
-  max-width: 80%;
-}
-/* line 77, ../sass/modules/_headings.scss */
-.lead:before {
-  display: block;
-  margin-bottom: 1em;
-  width: 10em;
-  height: 3px;
-  background-color: #eb4a2a;
-  content: "\200B";
-}
-/* line 87, ../sass/modules/_headings.scss */
-.lead small {
-  font-size: 14.4px;
-  font-size: 0.9rem;
+  margin-top: 2em;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
+  max-width: 873.6px;
+  max-width: 54.6rem;
 }
 
 /************************************************************************************
@@ -1522,6 +1491,7 @@ img {
 /* line 27, ../sass/modules/_images.scss */
 .img--lead {
   margin-top: 0;
+  width: 100%;
 }
 
 /**
@@ -1531,7 +1501,7 @@ img {
  *   <figcaption>Optional figcaption</figcaption>
  * </figure>
  */
-/* line 40, ../sass/modules/_images.scss */
+/* line 41, ../sass/modules/_images.scss */
 figcaption, .figcaption, .figure p {
   clear: both;
   line-height: 1.2;
@@ -1541,12 +1511,12 @@ figcaption, .figcaption, .figure p {
   margin-bottom: 0;
 }
 
-/* line 52, ../sass/modules/_images.scss */
+/* line 53, ../sass/modules/_images.scss */
 .figure {
   margin-top: 3em;
   margin-bottom: 2em;
 }
-/* line 55, ../sass/modules/_images.scss */
+/* line 56, ../sass/modules/_images.scss */
 .figure img {
   margin-top: 0;
   margin-bottom: 0;
@@ -1560,16 +1530,16 @@ iframe, object, embed {
   max-width: 100%;
 }
 
-/* line 15, ../sass/modules/_iframe.scss */
+/* line 16, ../sass/modules/_iframe.scss */
 .iframeContainer {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 62%;
   height: 0;
   overflow: hidden;
   margin-top: 1em;
 }
 
-/* line 26, ../sass/modules/_iframe.scss */
+/* line 28, ../sass/modules/_iframe.scss */
 .iframeContainer iframe,
 .iframeContainer object,
 .iframeContainer embed {
@@ -1580,9 +1550,15 @@ iframe, object, embed {
   height: 100%;
 }
 
-/* line 38, ../sass/modules/_iframe.scss */
+/* line 41, ../sass/modules/_iframe.scss */
 .iframeContainer--gmap {
   padding-bottom: 100%;
+}
+
+/* line 45, ../sass/modules/_iframe.scss */
+.iframeWrapper {
+  max-width: 470.4px;
+  max-width: 29.4rem;
 }
 
 /************************************************************************************
@@ -1634,23 +1610,15 @@ BLOCKTEXT
  */
 /* line 10, ../sass/modules/_blocktext.scss */
 .blocktext {
-  padding: 0.5em 1em;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
   text-align: left;
 }
-/* line 15, ../sass/modules/_blocktext.scss */
+/* line 16, ../sass/modules/_blocktext.scss */
 .blocktext p {
-  margin-top: 0.5em;
   margin-bottom: 0;
 }
-/* line 20, ../sass/modules/_blocktext.scss */
-.blocktext cite {
-  text-align: left;
-}
-/* line 25, ../sass/modules/_blocktext.scss */
-.blocktext cite:before {
-  content: "";
-}
-/* line 30, ../sass/modules/_blocktext.scss */
+/* line 21, ../sass/modules/_blocktext.scss */
 .blocktext .blocktext__title {
   font-size: 20.8px;
   font-size: 1.3rem;
@@ -1707,7 +1675,7 @@ blockquote:after {
 /* use to  mark out some text as PullQuote but without pulling  */
 /* line 7, ../sass/modules/_pullquotes.scss */
 .pullquote-open {
-  max-width: 32.3em;
+  max-width: 35.7em;
   padding: 1.5em;
   padding-bottom: 0;
   margin-bottom: 1.5em;
@@ -1750,7 +1718,7 @@ blockquote:after {
 
 /* line 47, ../sass/modules/_pullquotes.scss */
 .pullquote {
-  max-width: 26.6em;
+  max-width: 29.4em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   text-align: center;
@@ -1812,23 +1780,31 @@ blockquote:after {
  */
 /* line 20, ../sass/modules/_navs.scss */
 .nav {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   list-style: none;
   padding: 0;
-  margin-left: 1.5em;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
   font-size: 12.8px;
   font-size: 0.8rem;
   text-transform: uppercase;
   text-align: center;
 }
-/* line 30, ../sass/modules/_navs.scss */
+/* line 31, ../sass/modules/_navs.scss */
 .nav > li {
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 35, ../sass/modules/_navs.scss */
+/* line 36, ../sass/modules/_navs.scss */
 .nav > li > a {
   display: block;
   margin: 0 0.25em;
@@ -1841,18 +1817,18 @@ blockquote:after {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #5f4b32;
+  color: #1c160f;
 }
-/* line 46, ../sass/modules/_navs.scss */
+/* line 47, ../sass/modules/_navs.scss */
 .nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
   color: #eb4a2a;
 }
-/* line 53, ../sass/modules/_navs.scss */
-.nav > .active > a {
+/* line 54, ../sass/modules/_navs.scss */
+.nav a.active {
   color: #eb4a2a;
 }
 
-/* line 64, ../sass/modules/_navs.scss */
+/* line 65, ../sass/modules/_navs.scss */
 .nav--stacked {
   display: inline-block;
   vertical-align: top;
@@ -1861,17 +1837,17 @@ blockquote:after {
   *display: inline;
   *vertical-align: auto;
 }
-/* line 66, ../sass/modules/_navs.scss */
+/* line 67, ../sass/modules/_navs.scss */
 .nav--stacked > li {
   float: none;
   display: block;
 }
-/* line 69, ../sass/modules/_navs.scss */
+/* line 70, ../sass/modules/_navs.scss */
 .nav--stacked > li > a {
   margin: 0;
   padding: 1em 2em;
 }
-/* line 74, ../sass/modules/_navs.scss */
+/* line 75, ../sass/modules/_navs.scss */
 .nav--stacked > .separate {
   float: none;
   display: inline-block;
@@ -1883,7 +1859,7 @@ blockquote:after {
   margin: 1.5em 1em;
 }
 
-/* line 81, ../sass/modules/_navs.scss */
+/* line 82, ../sass/modules/_navs.scss */
 .nav--2column {
   display: inline-block;
   vertical-align: top;
@@ -1892,7 +1868,7 @@ blockquote:after {
   *display: inline;
   *vertical-align: auto;
 }
-/* line 83, ../sass/modules/_navs.scss */
+/* line 84, ../sass/modules/_navs.scss */
 .nav--2column > li {
   float: none;
   display: inline-block;
@@ -1904,7 +1880,7 @@ blockquote:after {
   min-width: 45%;
   margin: 0 1em;
 }
-/* line 90, ../sass/modules/_navs.scss */
+/* line 91, ../sass/modules/_navs.scss */
 .nav--2column > .separate {
   float: none;
   min-width: 0;
@@ -1912,22 +1888,22 @@ blockquote:after {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 98, ../sass/modules/_navs.scss */
+  /* line 99, ../sass/modules/_navs.scss */
   .nav--adaptive {
     display: none;
-    background: black;
+    background: #e2dbd2;
     margin: 0;
     margin-top: 50px;
     padding-top: 50px;
   }
-  /* line 107, ../sass/modules/_navs.scss */
+  /* line 108, ../sass/modules/_navs.scss */
   .nav--adaptive > li {
     float: none;
     display: block;
     min-width: 40%;
     margin: 0 1em;
   }
-  /* line 113, ../sass/modules/_navs.scss */
+  /* line 114, ../sass/modules/_navs.scss */
   .nav--adaptive > li > a {
     margin: 0;
     padding: 1em 1.5em;
@@ -1938,7 +1914,7 @@ blockquote:after {
     border-radius: 0;
     border-bottom: 1px solid rgba(235, 74, 42, 0.15);
   }
-  /* line 122, ../sass/modules/_navs.scss */
+  /* line 123, ../sass/modules/_navs.scss */
   .nav--adaptive > .separate {
     float: none;
     margin: 1em;
@@ -1950,20 +1926,20 @@ blockquote:after {
     *display: inline;
     *vertical-align: auto;
   }
-  /* line 129, ../sass/modules/_navs.scss */
+  /* line 130, ../sass/modules/_navs.scss */
   .nav--adaptive > .current > a {
-    background: #2e0e08;
+    background: #e3beb0;
     border-color: transparent;
   }
-  /* line 134, ../sass/modules/_navs.scss */
+  /* line 135, ../sass/modules/_navs.scss */
   .nav--adaptive > .active > a {
-    background: #2e0e08;
+    background: #e3beb0;
     border-color: transparent;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 142, ../sass/modules/_navs.scss */
+  /* line 143, ../sass/modules/_navs.scss */
   .nav--adaptive.open {
     display: block;
   }
@@ -1975,34 +1951,16 @@ blockquote:after {
 /**
  * NAVBAR is a container for navigation [ .nav ]
  */
+/* line 9, ../sass/modules/_navbar.scss */
+.navbar {
+  text-align: left;
+}
+
 /************************************************************************************
  LOGO, BRAND
 *************************************************************************************/
 /* line 5, ../sass/modules/_logo.scss */
 .logo {
-  float: left;
-  padding-top: 1em;
-  padding-left-left: 1em;
-  color: #111111;
-}
-/* line 11, ../sass/modules/_logo.scss */
-.logo:first-letter {
-  color: #eb4a2a;
-}
-/* line 15, ../sass/modules/_logo.scss */
-.logo:hover, .logo:focus, .logo:active {
-  color: #eb4a2a;
-  text-decoration: none;
-}
-/* line 20, ../sass/modules/_logo.scss */
-.logo strong {
-  font-size: 20.8px;
-  font-size: 1.3rem;
-}
-
-/* line 26, ../sass/modules/_logo.scss */
-.logo--inline {
-  float: none;
   display: inline-block;
   vertical-align: top;
   /* IE hacks */
@@ -2010,6 +1968,26 @@ blockquote:after {
   *display: inline;
   *vertical-align: auto;
   vertical-align: baseline;
+  padding-top: 1em;
+  margin-right: 24px;
+  margin-right: 1.5rem;
+  margin-left: 24px;
+  margin-left: 1.5rem;
+  color: #111111;
+}
+/* line 13, ../sass/modules/_logo.scss */
+.logo:first-letter {
+  color: #eb4a2a;
+}
+/* line 17, ../sass/modules/_logo.scss */
+.logo:hover, .logo:focus, .logo:active {
+  color: #eb4a2a;
+  text-decoration: none;
+}
+/* line 22, ../sass/modules/_logo.scss */
+.logo strong {
+  font-size: 20.8px;
+  font-size: 1.3rem;
 }
 
 /************************************************************************************
@@ -2026,17 +2004,20 @@ Containers:  ROW, COLUMN and FLUID
  */
 /* line 16, ../sass/modules/_containers.scss */
 .central-wide {
-  max-width: 68em;
+  max-width: 1056px;
+  max-width: 66rem;
 }
 
 /* line 21, ../sass/modules/_containers.scss */
 .central-page {
-  max-width: 50em;
+  max-width: 1024px;
+  max-width: 64rem;
 }
 
 /* line 27, ../sass/modules/_containers.scss */
 .central-text {
-  max-width: 38em;
+  max-width: 672px;
+  max-width: 42rem;
 }
 
 /*
@@ -2053,7 +2034,7 @@ Containers:  ROW, COLUMN and FLUID
 }*/
 /* line 46, ../sass/modules/_containers.scss */
 .column-half {
-  max-width: 38em;
+  max-width: 42em;
 }
 @media only screen and (min-width: 1000px) {
   /* line 46, ../sass/modules/_containers.scss */
@@ -2070,7 +2051,7 @@ Containers:  ROW, COLUMN and FLUID
 
 /* line 56, ../sass/modules/_containers.scss */
 .column-third {
-  max-width: 38em;
+  max-width: 42em;
 }
 @media only screen and (min-width: 1000px) {
   /* line 56, ../sass/modules/_containers.scss */
@@ -2142,7 +2123,7 @@ Containers:  ROW, COLUMN and FLUID
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  max-width: 38em;
+  max-width: 42em;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -2172,10 +2153,11 @@ Section
 /* line 6, ../sass/modules/_section.scss */
 .section {
   padding-bottom: 3em;
-  padding-top: 1.5em;
+  margin-top: 1.5em;
+  background: ivory;
 }
 
-/* line 11, ../sass/modules/_section.scss */
+/* line 13, ../sass/modules/_section.scss */
 .section-isle {
   padding-bottom: 3em;
   padding-top: 3em;
@@ -2221,7 +2203,7 @@ MEDIA
   *display: inline;
   *vertical-align: auto;
   width: 65%;
-  padding-top: 1em;
+  padding-top: 0.5em;
   vertical-align: bottom;
 }
 @media only screen and (max-width: 700px) {
@@ -2248,11 +2230,10 @@ Post, Articles
   */
 /* line 7, ../sass/modules/_post.scss */
 .post {
-  margin-top: 1.5em;
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
-/* line 14, ../sass/modules/_post.scss */
+/* line 13, ../sass/modules/_post.scss */
 .post blockquote p, .post .pullquote p {
   padding-left: 0;
   padding-right: 0;
@@ -2297,12 +2278,12 @@ Post, Articles
 /* line 39, ../sass/modules/_thumbnails.scss */
 .thumbnail {
   display: block;
-  border: 1px solid rgba(235, 74, 42, 0.4);
+  background: #e2dbd2;
   border-radius: 6px;
-  padding: 0.25em;
-  margin-top: 1.5em;
+  padding: 0.5em;
+  margin-top: 2em;
 }
-/* line 48, ../sass/modules/_thumbnails.scss */
+/* line 45, ../sass/modules/_thumbnails.scss */
 .thumbnail img {
   margin-top: 0;
   border: none;
@@ -2314,26 +2295,19 @@ Post, Articles
   }
 }
 
-/* line 60, ../sass/modules/_thumbnails.scss */
+/* line 57, ../sass/modules/_thumbnails.scss */
 a.thumbnail {
   cursor: pointer;
+  border: 2px solid transparent;
+}
+/* line 60, ../sass/modules/_thumbnails.scss */
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
+  border-color: #eb4a2a;
 }
 
 /************************************************************************************
     Page Header
 *************************************************************************************/
-/************************************************************************************
-COVER.
-*************************************************************************************/
-/**
- *  Cover is a kind of intro block (normally page title, may be some background or lead img, author info and so on)
- */
-/* line 9, ../sass/modules/_page-cover.scss */
-.page-cover {
-  font-size: 16.96px;
-  font-size: 1.06rem;
-}
-
 /************************************************************************************
     Page Content
 *************************************************************************************/
@@ -2341,13 +2315,62 @@ COVER.
 .page-content {
   margin-top: 1.5em;
 }
+@media only screen and (min-width: 1000px) {
+  /* line 5, ../sass/modules/_page-content.scss */
+  .page-content {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
+}
 
 /************************************************************************************
     Page footer
 *************************************************************************************/
 /* line 5, ../sass/modules/_page-footer.scss */
 .page-footer {
-  padding-bottom: 4.5em;
+  background-color: #e2dbd2;
+  color: #111111;
+  padding-bottom: 1.5em;
+}
+
+/************************************************************************************
+COVER.
+*************************************************************************************/
+/**
+ *  Cover is a kind of intro block (normally page title, may be some background or lead img, author info and so on)
+ */
+/* line 9, ../sass/modules/_cover.scss */
+.cover {
+  font-size: 16.96px;
+  font-size: 1.06rem;
+  background-color: #e2dbd2;
+  margin-bottom: 1.5em;
+  padding-top: 1px;
+}
+/* line 15, ../sass/modules/_cover.scss */
+.cover img {
+  margin-top: 0;
+}
+/* line 19, ../sass/modules/_cover.scss */
+.cover strong {
+  display: block;
+  font-size: 18.56px;
+  font-size: 1.16rem;
+  text-align: center;
+}
+/* line 26, ../sass/modules/_cover.scss */
+.cover strong:before {
+  display: block;
+  margin-bottom: 1em;
+  width: 10em;
+  height: 3px;
+  background-color: #eb4a2a;
+  content: "\200B";
+}
+/* line 36, ../sass/modules/_cover.scss */
+.cover strong small {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 /**
@@ -2371,8 +2394,5 @@ COVER.
 /* line 23, ../sass/modules/_zebra.scss */
 .zebra .zebra__item:nth-child(even),
 .zebra > li:nth-child(even) {
-  border-style: solid;
-  border-width: 2px;
-  border-left: none;
-  border-right: none;
+  background: #e2dbd2;
 }
