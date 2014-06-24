@@ -1104,11 +1104,8 @@ p {
 COLORS
 *************************************************************************************/
 /* line 7, ../sass/modules/_colors.scss */
-.highlight, .section, .page-content {
+.highlight, .page-content {
   background: #f0f0f0;
-  box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
 }
 
 /************************************************************************************
@@ -1124,6 +1121,7 @@ html {
   /* improves the text rendering in more recent browsers */
   text-rendering: optimizeLegibility;
   font-size: 1.2em;
+  background: ivory;
 }
 @media only screen and (min-width: 1000px) {
   /* line 12, ../sass/modules/_!main.scss */
@@ -2164,10 +2162,12 @@ Section
 .section {
   padding-bottom: 3em;
   margin-top: 1.5em;
-  background: ivory;
+  box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
 }
 
-/* line 13, ../sass/modules/_section.scss */
+/* line 14, ../sass/modules/_section.scss */
 .section-isle {
   padding-bottom: 3em;
   padding-top: 3em;
