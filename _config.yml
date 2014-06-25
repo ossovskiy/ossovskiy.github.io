@@ -13,7 +13,7 @@ exclude: ['README.md', "Rakefile", 'sass/']
 # Website url address.
 # It must be a valid url.
 # This means always setting the protocol (http|https) or prefixing with "/"
-url:      http://ossovskiy.github.io
+url:     http://ossovskiy.github.io
 
 #   - When in localhost, the site will run from root "/" regardless of url
 #   - Only the following values are falsy: ["", null, false]

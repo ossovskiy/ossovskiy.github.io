@@ -7,13 +7,19 @@ COVER.
  */
 
 .cover {
+    @extend %clearfix;
     @include font-size($cover-font-size);
     background-color: $cover-bg;
-    margin-bottom: $gap-large;
     padding-top: 1px;
+    padding-bottom: 1px;
 
     img {
         margin-top: 0;
+    }
+
+    p {
+        margin-top: $gap-base;
+         margin-bottom: $gap-base;
     }
 
     strong {

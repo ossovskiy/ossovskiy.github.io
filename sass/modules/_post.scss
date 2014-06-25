@@ -5,9 +5,10 @@ Post, Articles
 /** Preformed base classes for articles and blog posts
   */
 .post {
+    @extend %clearfix;
     @extend %text-normalize;
    // margin-top: $gap-large;
-    padding-top: $gap-base;
+    padding-top: $gap-small;
     padding-bottom: $gap-large * 2;
 
     blockquote p, .pullquote p {
@@ -18,10 +19,5 @@ Post, Articles
     .lead {
         @include rem-fallback(max-width, $width-text*1.2);
     }
-
-
 }
-
-
-
 

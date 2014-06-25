@@ -40,7 +40,8 @@
     display: block;
     background: $cover-bg;
     border-radius: $border-radius;
-    padding: $gap-small;
+    padding: $gap-mini;
+    margin: $gap-mini;
     margin-top: $gap-huge;
     img {
         margin-top: 0;

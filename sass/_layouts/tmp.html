@@ -1,6 +1,10 @@
-{% include setup %}
-{% include head.html %}
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
 
 <div class="central-page">
     <div class="page-content">
@@ -18,10 +22,10 @@
                 {{ page.cover-text }}
             </div>
         </div>
-        <div class="post">
+        <div class="post ">
             {% else %}
         </div>
-        <div class="post intense">
+        <div class="post cover">
             {% endif %}
 
             {{ content }}
@@ -33,5 +37,5 @@
     </div>
 </div>
 
-{% include footer.html %}
-{% include foot.html %}
+</body>
+</html>

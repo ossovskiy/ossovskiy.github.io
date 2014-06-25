@@ -44,6 +44,8 @@ iframe, object, embed {
 
 .iframeWrapper {
     @extend %pull-center;
+    margin-top: $gap-huge;
+    margin-bottom: $gap-huge;
     @include rem-fallback(max-width, 0.7*$width-text);
 }
 

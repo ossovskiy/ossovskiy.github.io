@@ -64,7 +64,7 @@ Containers:  ROW, COLUMN and FLUID
 }
 
 .column-fourth {
-    width: 50%;
+    width: 25%;
     float: left;
 
     @include breakpoint(big) {
@@ -73,7 +73,7 @@ Containers:  ROW, COLUMN and FLUID
     }
 
     @include breakpoint(small) {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -83,7 +83,7 @@ Containers:  ROW, COLUMN and FLUID
  */
 
 .column-content {
-    width: 65%;
+    width: 70%;
     float: left;
 
     @include breakpoint(small) {
@@ -93,14 +93,20 @@ Containers:  ROW, COLUMN and FLUID
 }
 
 .column-sidebar {
-    width: 30%;
+    width: 25%;
     float: right;
 
     @include breakpoint(small) {
         float: none;
         width: 100%;
     }
+}
 
+.sidebar-box {
+    @include breakpoint(small) {
+        float: left;
+        width: 50%;
+    }
 }
 
 /*

@@ -6,8 +6,9 @@
     @extend .highlight;
     margin-top: $gap-large;
 
-    @include breakpoint(big) {
-        margin-right: $gap-large;
-        margin-left: $gap-large;
-    }
+    // Cross-Browser Min Height http://css-tricks.com/snippets/css/cross-browser-min-height
+    // Прижатый к низу футер http://verstka.pro/notes/prizhatyy-k-nizu-futer.html
+    min-height: 80%;
+    height: auto !important;
+    height: 80%;
 }

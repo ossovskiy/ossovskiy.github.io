@@ -10,7 +10,7 @@ BLOCKTEXT
 .blocktext {
     @extend %text-normalize;
     padding-top: $gap-small;
-    padding-bottom: $gap-huge;
+    padding-bottom: $gap-small;
     text-align: left;
 
     p {

@@ -15,13 +15,13 @@ h1, h2, h3, h4, h5, h6 {
     //font-weight: bold;
     line-height: $headings-line-height;
     margin-top: $gap-large;
-    text-align: left;
+    text-align: center;
 }
 
 h1 {
     font-weight: normal;
     margin-top: $gap-large;
-    @include font-size($font-size-h1 * 0.85);
+    @include font-size($font-size-h1 * 0.8);
 
     @include breakpoint(big) {
         @include font-size($font-size-h1);
@@ -63,7 +63,6 @@ h3, h4, h5 {
     text-align: left;
     font-weight: bold;
     margin-top: $gap-large;
-    //margin-bottom: $gap-small;
     padding-left: $gap-mini;
     border-left: 5px solid $link-color;
     @include rem-fallback(max-width, $width-text);
@@ -82,11 +81,21 @@ h3, h4, h5 {
     margin-top: $gap-huge;
     @include rem-fallback(margin-right, $gap-base-rem);
     @include rem-fallback(margin-left, $gap-base-rem);
-    @include rem-fallback(max-width, $width-text*1.2);
+    @include rem-fallback(max-width, $width-text*1.3);
 
     .button {
         @include font-size(1);
     }
+
+    &:before {
+         @extend %pull-center;
+         display: block;
+         margin-bottom: $gap-base;
+         width: $pullquote-border-length;
+         height: $pullquote-border-width;
+         background-color: $pullquote-border-color;
+         content: "\200B"
+     }
 }
 
 

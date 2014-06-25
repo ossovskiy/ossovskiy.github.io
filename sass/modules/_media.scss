@@ -17,7 +17,7 @@ MEDIA
     text-align: right;
     > .media__object {
         @include inline-block;
-        width: 35%;
+        width: 30%;
         vertical-align: bottom;
 
         > img {
@@ -28,9 +28,10 @@ MEDIA
 
     > .media__body {
         @include inline-block;
-        width: 65%;
+        width: 70%;
         padding-top: $gap-small;
         vertical-align: bottom;
+        padding-bottom: $gap-small;
     }
 
     // Change left-right-aligned to top-bottom-aligned on small screens
@@ -40,13 +41,14 @@ MEDIA
             width: 100%;
             max-width: 100%;
             > img {
-                width: 50%;
+                width: 40%;
             }
         }
 
         > .media__body {
             width: 100%;
             max-width: 100%;
+            padding-bottom: 0;
         }
     }
 }

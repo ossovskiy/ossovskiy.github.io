@@ -39,6 +39,10 @@ body {
     text-shadow: 0 1px 1px rgba(white, 0.4);
 }
 
+html, body {
+  height: 100%;
+}
+
 /**
 *  Give Clickable Elements a Pointer Cursor
 *  Source: http://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor/
@@ -72,7 +76,7 @@ a {
  */
 
 p {
-    margin-top: $gap-base;
+    margin-top: $gap-large;
     margin-bottom: $gap-large;
 }
 
