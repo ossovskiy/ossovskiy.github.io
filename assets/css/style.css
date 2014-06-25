@@ -2274,7 +2274,7 @@ Post, Articles
 /* line 7, ../sass/modules/_post.scss */
 .post {
   padding-top: 0.5em;
-  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 /* line 14, ../sass/modules/_post.scss */
 .post blockquote p, .post .pullquote p {
