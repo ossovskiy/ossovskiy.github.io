@@ -9,7 +9,7 @@ Post, Articles
     @extend %text-normalize;
    // margin-top: $gap-large;
     padding-top: $gap-small;
-    padding-bottom: $gap-large * 2;
+    margin-bottom: $gap-large;
 
     blockquote p, .pullquote p {
         padding-left: 0;

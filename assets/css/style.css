@@ -2193,9 +2193,9 @@ Section
   box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
   -webkit-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
   -moz-box-shadow: 0 0 8px rgba(17, 17, 17, 0.6);
-  min-height: 90%;
+  min-height: 80%;
   height: auto !important;
-  height: 90%;
+  height: 80%;
 }
 
 /* line 19, ../sass/modules/_section.scss */
@@ -2274,7 +2274,7 @@ Post, Articles
 /* line 7, ../sass/modules/_post.scss */
 .post {
   padding-top: 0.5em;
-  padding-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 /* line 14, ../sass/modules/_post.scss */
 .post blockquote p, .post .pullquote p {
@@ -2363,6 +2363,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 /* line 5, ../sass/modules/_page-content.scss */
 .page-content {
   margin-top: 1.5em;
+  padding-bottom: 3em;
   min-height: 80%;
   height: auto !important;
   height: 80%;
