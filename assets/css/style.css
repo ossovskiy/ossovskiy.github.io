@@ -2274,7 +2274,7 @@ Post, Articles
 /* line 7, ../sass/modules/_post.scss */
 .post {
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 3em;
 }
 /* line 14, ../sass/modules/_post.scss */
 .post blockquote p, .post .pullquote p {
@@ -2329,27 +2329,21 @@ Post, Articles
   background: #e2dbd2;
   border-radius: 6px;
   padding: 0.25em;
-  margin: 0.25em;
-  margin-top: 2em;
+  margin: 2em 0.25em;
+  margin-bottom: 3em;
 }
-/* line 46, ../sass/modules/_thumbnails.scss */
+/* line 47, ../sass/modules/_thumbnails.scss */
 .thumbnail img {
   margin-top: 0;
   border: none;
 }
-@media only screen and (max-width: 760px) {
-  /* line 39, ../sass/modules/_thumbnails.scss */
-  .thumbnail {
-    margin: 1.5em 0.5em;
-  }
-}
 
-/* line 58, ../sass/modules/_thumbnails.scss */
+/* line 55, ../sass/modules/_thumbnails.scss */
 a.thumbnail {
   cursor: pointer;
   border: 2px solid transparent;
 }
-/* line 61, ../sass/modules/_thumbnails.scss */
+/* line 58, ../sass/modules/_thumbnails.scss */
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
   border-color: #eb4a2a;
 }
@@ -2363,7 +2357,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail:active {
 /* line 5, ../sass/modules/_page-content.scss */
 .page-content {
   margin-top: 1.5em;
-  padding-bottom: 3em;
   min-height: 80%;
   height: auto !important;
   height: 80%;

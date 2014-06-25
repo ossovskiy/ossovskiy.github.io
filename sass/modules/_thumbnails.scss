@@ -41,15 +41,12 @@
     background: $cover-bg;
     border-radius: $border-radius;
     padding: $gap-mini;
-    margin: $gap-mini;
-    margin-top: $gap-huge;
+    margin: $gap-huge $gap-mini;
+    margin-bottom: 2*$gap-large;
+
     img {
         margin-top: 0;
         border: none;
-    }
-
-    @include breakpoint(small) {
-        margin: $gap-large $gap-small;
     }
 }
 

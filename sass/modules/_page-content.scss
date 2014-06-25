@@ -5,7 +5,6 @@
 .page-content {
     @extend .highlight;
     margin-top: $gap-large;
-    padding-bottom: $gap-large * 2;
 
     // Cross-Browser Min Height http://css-tricks.com/snippets/css/cross-browser-min-height
     // Прижатый к низу футер http://verstka.pro/notes/prizhatyy-k-nizu-futer.html
